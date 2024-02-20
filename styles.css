@@ -1,0 +1,144 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    font-family: "Overpass", sans-serif;
+}
+
+.card {
+    width: 95%;
+    max-width: 25rem;
+    background-color: var(--Dark-Blue);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.circle {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(212, 22%, 23%);
+}
+
+.img {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 700;
+}
+
+p {
+    color: var(--Light-Grey);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.choice {
+    position: relative;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.choice:has(input[type="radio"]:checked) {
+    color: var(--White);
+    background-color: var(--Light-Grey);
+}
+
+.choice:hover {
+    cursor: pointer;
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+label {
+    color: var(--Medium-Grey);
+}
+
+
+button {
+    width: 100%;
+    background-color: var(--Orange);
+    color: var(--White);
+    height: 2.8rem;
+    border-radius: 1.4rem;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--White);
+}
+
+.attribution a { 
+    color: var(--Orange); 
+}
+
+/* thank-you page */
+.img-div, .text {
+    text-align: center;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.result {
+    font-size: 1rem;
+    color: var(--Orange);
+    background-color: hsl(212, 22%, 23%);
+    padding: 0.5rem 0.825rem;
+    border-radius: 1rem;
+}
+
+.thank-you-text {
+    color: var(--White);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.9375rem;
+    color: var(--Light-Grey);
+    line-height: 1.5;
+}

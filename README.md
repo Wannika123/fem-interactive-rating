@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/Wannika123/fem-interactive-rating)
-- Live Site URL: [Github page](https://your-live-site-url.com)
+- Live Site URL: [Github page](https://wannika123.github.io/fem-interactive-rating/)
 
 ## My process
 
